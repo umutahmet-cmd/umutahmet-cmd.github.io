@@ -4,17 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google Search Console doğrulama -->
+  <!-- Google Search Console doğrulaması -->
   <meta name="google-site-verification" content="y-nH8OgBPjiYrQWjCGHK8ftdgsSMa2M41mbcZGwze8o" />
 
   <title>Umut Ahmet | Resmî Web Sitesi</title>
   <meta name="description" content="Umut Ahmet – besteci, söz yazarı ve yorumcu. Projeler, diskografi, videolar, konserler ve iletişim." />
-  <meta name="author" content="Umut Ahmet" />
+  <link rel="canonical" href="https://umutahmet-cmd.github.io/" />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://umutahmet-cmd.github.io/" />
   <meta property="og:title" content="Umut Ahmet | Resmî Web Sitesi" />
   <meta property="og:description" content="Besteci, söz yazarı ve yorumcu. Projeler, diskografi, videolar, konserler ve iletişim." />
   <meta property="og:image" content="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1600&auto=format&fit=crop" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Umut Ahmet | Resmî Web Sitesi" />
+  <meta name="twitter:description" content="Besteci, söz yazarı ve yorumcu. Projeler, diskografi, videolar, konserler ve iletişim." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1600&auto=format&fit=crop" />
+
+  <!-- Favicon (basit SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='24' fill='%236366f1'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-size='64' font-family='Arial' fill='white'%3EU%3C/text%3E%3C/svg%3E" />
 
   <!-- Tailwind (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,37 +31,53 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            brand: {50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'}
-          }
+          colors: { brand: {50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'} }
         }
       }
     }
   </script>
 
-  <!-- JSON-LD (Müzisyen) -->
+  <!-- JSON-LD (WebSite + Person) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "Umut Ahmet",
-    "alternateName": ["Umut Ahmet Beceren"],
-    "genre": ["Türkçe Pop", "Türk Sanat Müziği", "Enstrümantal"],
-    "url": "https://umutahmet-cmd.github.io/",
-    "sameAs": [
-      "https://www.youtube.com/@IsimliDogumGunuSarkilari",
-      "https://www.last.fm/user/Bayramic17"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Umut Ahmet | Resmî Web Sitesi",
+        "url": "https://umutahmet-cmd.github.io/",
+        "inLanguage": "tr",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.google.com/search?q=site:umutahmet-cmd.github.io+{query}",
+          "query-input": "required name=query"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Umut Ahmet",
+        "alternateName": ["Umut Ahmet Beceren"],
+        "jobTitle": "Müzisyen",
+        "knowsAbout": ["Besteci","Söz Yazarı","Yorumcu"],
+        "url": "https://umutahmet-cmd.github.io/",
+        "sameAs": [
+          "https://open.spotify.com/intl-tr/artist/1eGYL5tHN1gCEvm2GF45Tm?si=1gdZNQcsQZq4ybr6niJMlg",
+          "https://music.apple.com/tr/artist/umut-ahmet/1184258388",
+          "https://www.youtube.com/@UmutAhmetle90larT%C3%BCrk%C3%A7e%C5%9Eark%C4%B1lar",
+          "https://www.instagram.com/umutahmetbeceren"
+        ]
+      }
     ]
   }
   </script>
 
   <style>
-    html { scroll-behavior:smooth }
-    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,.08); }
+    html { scroll-behavior: smooth }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,.08) }
   </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-brand-900 via-gray-950 to-black text-white">
 
+<body class="min-h-screen bg-gradient-to-b from-brand-900 via-gray-950 to-black text-white">
   <!-- NAV -->
   <header class="sticky top-0 z-40 glass border-b border-white/10">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -75,7 +100,7 @@
     <div class="max-w-6xl mx-auto px-4">
       <div class="max-w-2xl">
         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Umut Ahmet</h1>
-        <p class="mt-4 text-white/80 max-w-xl">Besteci • Söz Yazarı • Yorumcu. 90'lar esintili modern şarkılar ve “İsimli Doğum Günü Şarkıları” gibi yüksek etkileşimli projeler.</p>
+        <p class="mt-4 text-white/80 max-w-xl">Besteci • Söz Yazarı • Yorumcu. 90'lar esintili modern şarkılar ve “İsimli Doğum Günü Şarkıları” gibi projeler.</p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a href="#listen" class="px-5 py-3 rounded-2xl bg-brand-600 hover:bg-brand-500">Hemen Dinle</a>
           <a href="#discography" class="px-5 py-3 rounded-2xl border border-white/20 hover:border-white/40">Diskografi</a>
@@ -91,12 +116,13 @@
       <div>
         <h2 class="text-3xl font-bold">Hakkında</h2>
         <p class="mt-4 text-white/80 leading-relaxed">
-          1996'dan bugüne sahnelerde ve stüdyoda aktif. TRT Altın Anten, Tanju Okan, Altın Güvercin gibi yarışmalarda dereceler; pek çok sanatçıya verilen besteler; 2025’te yayımlanan yapay zekâ solistli “Böyle Bi’ Şey” albümü ve yeni projeler.
+          1996'dan bugüne sahnede ve stüdyoda aktif. Yarışmalarda dereceler, farklı sanatçılara verilen besteler ve yeni projeler.
         </p>
         <div class="mt-6 flex flex-wrap gap-3 text-sm">
-          <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://www.youtube.com/@IsimliDogumGunuSarkilari" target="_blank" rel="noopener">YouTube</a>
-          <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://www.last.fm/user/Bayramic17" target="_blank" rel="noopener">Last.fm</a>
-          <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="#" target="_blank" rel="noopener">Spotify (ekleyin)</a>
+          <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://open.spotify.com/intl-tr/artist/1eGYL5tHN1gCEvm2GF45Tm?si=1gdZNQcsQZq4ybr6niJMlg" target="_blank" rel="noopener">Spotify</a>
+          <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://music.apple.com/tr/artist/umut-ahmet/1184258388" target="_blank" rel="noopener">Apple Music</a>
+          <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://www.youtube.com/@UmutAhmetle90larT%C3%BCrk%C3%A7e%C5%9Eark%C4%B1lar" target="_blank" rel="noopener">YouTube</a>
+          <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://www.instagram.com/umutahmetbeceren" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
     </div>
@@ -106,29 +132,30 @@
   <section id="listen" class="py-16">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold">Dinle</h2>
-      <p class="mt-3 text-white/70">Aşağıdaki yerleştirmeleri kendi bağlantılarınızla değiştirin.</p>
+      <p class="mt-3 text-white/70">Resmî profillerinden dinleyin:</p>
 
       <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <!-- Spotify ARTIST embed -->
         <div class="aspect-video rounded-2xl overflow-hidden border border-white/10">
-          <!-- Spotify örnek embed -->
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3?utm_source=generator" width="100%" height="100%" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1eGYL5tHN1gCEvm2GF45Tm" width="100%" height="100%" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
+
+        <!-- YouTube: Kanal için embed yerine örnek video. İstersen bir video ID'si ver, değiştiririm. -->
         <div class="aspect-video rounded-2xl overflow-hidden border border-white/10">
-          <!-- YouTube örnek embed -->
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 
       <div class="mt-8 flex flex-wrap gap-3">
-        <a class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500" href="#" target="_blank" rel="noopener">Spotify</a>
-        <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="#" target="_blank" rel="noopener">Apple Music</a>
-        <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="#" target="_blank" rel="noopener">Deezer</a>
-        <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="#" target="_blank" rel="noopener">TikTok</a>
+        <a class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500" href="https://open.spotify.com/intl-tr/artist/1eGYL5tHN1gCEvm2GF45Tm?si=1gdZNQcsQZq4ybr6niJMlg" target="_blank" rel="noopener">Spotify</a>
+        <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://music.apple.com/tr/artist/umut-ahmet/1184258388" target="_blank" rel="noopener">Apple Music</a>
+        <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://www.youtube.com/@UmutAhmetle90larT%C3%BCrk%C3%A7e%C5%9Eark%C4%B1lar" target="_blank" rel="noopener">YouTube Kanalı</a>
+        <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://www.instagram.com/umutahmetbeceren" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
   </section>
 
-  <!-- DİSKOGRAFİ -->
+  <!-- DİSKOGRAFİ (örnek) -->
   <section id="discography" class="py-16 border-t border-white/10 bg-black/40">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex items-center justify-between gap-4">
@@ -170,11 +197,11 @@
         </form>
         <div class="space-y-3 text-white/80">
           <p><strong>Menajerlik / İletişim:</strong> iletisim@umutahmet-cmd.github.io</p>
-          <p class="text-sm">Basın kiti ve teknik rider için e-posta atın.</p>
           <div class="flex flex-wrap gap-3 pt-2">
-            <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="#" target="_blank">Instagram</a>
-            <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="#" target="_blank">Twitter/X</a>
-            <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="#" target="_blank">Facebook</a>
+            <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://open.spotify.com/intl-tr/artist/1eGYL5tHN1gCEvm2GF45Tm?si=1gdZNQcsQZq4ybr6niJMlg" target="_blank">Spotify</a>
+            <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://music.apple.com/tr/artist/umut-ahmet/1184258388" target="_blank">Apple Music</a>
+            <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://www.youtube.com/@UmutAhmetle90larT%C3%BCrk%C3%A7e%C5%9Eark%C4%B1lar" target="_blank">YouTube</a>
+            <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20" href="https://www.instagram.com/umutahmetbeceren" target="_blank">Instagram</a>
           </div>
         </div>
       </div>
@@ -192,11 +219,11 @@
     // yıl
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // diskografi verisi (örnek)
+    // Diskografi (örnek veriler)
     const discographyData = [
-      { title:'Böyle Bi’ Şey', year:2025, type:'Albüm', cover:'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop', link:'#' },
-      { title:'Kırık Mikrofon', year:2023, type:'EP', cover:'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop', link:'#' },
-      { title:'Gece Mavisi', year:2017, type:'Albüm', cover:'https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=1200&auto=format&fit=crop', link:'#' }
+      { title:'Böyle Bi’ Şey', year:2025, type:'Albüm', cover:'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop', link:'https://open.spotify.com/intl-tr/artist/1eGYL5tHN1gCEvm2GF45Tm' },
+      { title:'Kırık Mikrofon', year:2023, type:'EP',    cover:'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop', link:'https://music.apple.com/tr/artist/umut-ahmet/1184258388' },
+      { title:'Gece Mavisi',   year:2017, type:'Albüm', cover:'https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=1200&auto=format&fit=crop', link:'https://www.youtube.com/@UmutAhmetle90larT%C3%BCrk%C3%A7e%C5%9Eark%C4%B1lar' }
     ];
     const discographyGrid = document.getElementById('discographyGrid');
     discographyData.sort((a,b)=> b.year-a.year).forEach(item=>{
@@ -217,8 +244,8 @@
       discographyGrid.appendChild(el);
     });
 
-    // video galerisi (YouTube ID'lerini ekleyin)
-    const videoIds = ['dQw4w9WgXcQ'];
+    // Videolar: İstersen YouTube video ID'lerini ver, buraya ekleyeyim.
+    const videoIds = [];
     const videoGrid = document.getElementById('videoGrid');
     videoIds.forEach(id=>{
       const card=document.createElement('div');
@@ -230,18 +257,15 @@
       videoGrid.appendChild(card);
     });
 
-    // konser listesi (örnek)
-    const shows = [
-      { date:'2025-11-12', city:'İstanbul', venue:'Kadıköy Sahne', link:'#' },
-      { date:'2025-12-05', city:'İzmir', venue:'Alsancak Gösteri Merkezi', link:'#' }
-    ];
+    // Konserler (örnek)
+    const shows = [];
     const fmt = d => new Date(d).toLocaleDateString('tr-TR',{day:'2-digit',month:'long',year:'numeric'});
     const showsList = document.getElementById('showsList');
     shows.forEach(s=>{
       const row=document.createElement('a');
       row.href=s.link||'#'; row.target='_blank'; row.rel='noopener';
       row.className='flex items-center justify-between gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20';
-      row.innerHTML = `<span>${fmt(s.date)}</span><span class="text-white/80">${s.city} • ${s.venue}</span><span class="text-white/60 text-sm">Biletler</span>`;
+      row.innerHTML = `<span>${fmt(s.date)}</span><span class="text-white/80">${s.city} • ${s.venue}</span><span class="text-white/60 text-sm">Detay</span>`;
       showsList.appendChild(row);
     });
   </script>
